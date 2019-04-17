@@ -1,9 +1,11 @@
-<?php include( "dbconnect.php" ); ?>
+<?php include( "dbconnect.php" );
+include("values.php");
+include("functions.php"); ?>
 <!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>The Advice Shop - Home</title>
+    <title><?php echo $site_name ?> - Home</title> <!-- made the site name a variable in values.php for reuse -->
     <link href="styles/mainstyles.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
@@ -11,7 +13,7 @@
 <?php include( "inc_header.php" );
 include( "inc_nav.php" ); ?>
 <section id="content">
-    <h2>Welcome to The Advice Shop </h2>
+    <h2>Welcome to <?php echo $site_name ?> </h2>
 
     <p><strong>You need advice. We provide it</strong>.</p>
     <p>These days, it's impossible to <em>really</em> succeed on your own with the complexity
@@ -27,11 +29,13 @@ include( "inc_nav.php" ); ?>
     <p><img src="images/womanHeadset.jpg" alt="" width="310" height="200"
                                       class="rightImage"/>For all advice related to:</p>
     <ul>
-        <li>Learning</li>
-        <li>Relationships</li>
-        <li>Technology</li>
-        <li>Coffee</li>
-        <li>and so much more...</li>
+<!--        <li>Learning</li>-->
+<!--        <li>Relationships</li>-->
+<!--        <li>Technology</li>-->
+<!--        <li>Coffee</li>-->
+<!--        <li>and so much more...</li>-->
+        <?php make_list_items($services) ?>
+        <!-- function uses a foreach loop to make html <li> items from an array -->
     </ul>
 
 </section>
