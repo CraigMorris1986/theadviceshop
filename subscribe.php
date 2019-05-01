@@ -28,7 +28,7 @@ include("inc_nav.php"); ?>
     <br>
   </p>
   <p>
-    <input type="submit" name="submit" id="submit" value="Subscribe">
+    <input class="button-subscribe" type="submit" name="submit" id="submit" value="Subscribe">
   </p>
 </form>
 </div>

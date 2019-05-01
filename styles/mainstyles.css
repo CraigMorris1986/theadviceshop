@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.button, .button-subscribe {
+  border-radius: 5px;
+  font-style: oblique;
+  padding: 5px;
+  background: #719B3F;
+  color: #FFFFFF;
+}
+
+.button-subscribe {
+  font-size: 1.5em;
+}
+.button-subscribe:hover {
+  transition-duration: 550ms;
+  padding: 5px 25px;
+  color: black;
+}
+
 body {
   min-width: 640px;
   margin: 0;
@@ -69,10 +86,7 @@ footer, header#pageHeader {
   background-color: #565656;
   color: #FFFFFF;
   text-align: left;
-  padding-top: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
-  padding-left: 1.5em;
+  padding: 1.5em;
   clear: both;
 }
 
@@ -159,10 +173,7 @@ footer#customFooter {
   background-color: #b74747;
   color: #FFFFFF;
   text-align: left;
-  padding-top: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 1.5em;
-  padding-left: 1.5em;
+  padding: 1.5em;
   clear: both;
 }
 
